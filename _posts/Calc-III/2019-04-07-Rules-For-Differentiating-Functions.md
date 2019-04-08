@@ -1,0 +1,1 @@
+I mean it's basically the same as one variable, and prove with Jacobian and Chain rule. 

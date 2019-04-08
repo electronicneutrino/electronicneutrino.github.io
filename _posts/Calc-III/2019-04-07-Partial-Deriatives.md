@@ -9,3 +9,19 @@ This definition of the partial derivative an eventually be expressed as
 $$\frac{\partial f}{\partial x_j}(\vec{a})=\lim_{h\to 0}\frac{f(a_1, \dots, a_{j}+h, \dots, a_n)-f(a_1, \dots, a_j, \dots, a_n)}{h}.$$
 
 This can be thought of a new function $g$ with a variable $a_j$ and the rest of the variables held constant. 
+
+------
+
+Important Results:
+
+
+
+------
+
+Used in: 
+
+
+
+------
+
+See also: 
