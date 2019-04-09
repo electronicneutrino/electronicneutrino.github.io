@@ -109,7 +109,7 @@ author:
   name             : "Neu"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I like organizing information"
-  location         : "Somewhere"
+  location         : ""
   email            :
   links:
     - label: "Email"
@@ -279,6 +279,12 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  calculus:
+    output: true
+    permalink: /calculus/:name
+
 
 # Defaults
 defaults:
@@ -289,7 +295,13 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
-      share: true
+      share: false
       related: true
+    #_calculus
+  - scope:
+      path: ""
+      type: "calculus"
+    values:
+      layout: calculus

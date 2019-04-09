@@ -6,7 +6,7 @@
       }
     },
     tex2jax: {
-      inlineMath: [ ['$','$'], ['\(', '\)'] ],
+      inlineMath: [ ['$','$']],
       displayMath: [ ['$$','$$'], ['\begin{align*}', '\end{align*}'] ],
       processEscapes: true,
     }
