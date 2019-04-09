@@ -3,13 +3,17 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
-  border-bottom: 1px solid $border-color;
+  position: absolute;
+  width:100vw;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
+  -webkit-transition: margin-top 1s; /* Safari */
+  transition: margin-top 1s;
   z-index: 20;
+  background-color: $footer-background-color;
+  margin-top:-60px;
 
   &__inner-wrap {
     @include clearfix;
@@ -38,7 +42,9 @@
     }
   }
 }
-
+.masthead:hover {
+  margin-top:0px;
+}
 .site-logo img {
   max-height: 2rem;
 }

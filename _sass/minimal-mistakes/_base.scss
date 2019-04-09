@@ -6,7 +6,13 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  background-color: #D4D0D0;
 }
+
+
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#baa8a4;border-radius:0px}
+::-webkit-scrollbar-thumb{background:#5f4e51;border-radius:0px}
 
 body {
   margin: 0;
@@ -15,6 +21,7 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
+  position:relative;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -326,6 +333,13 @@ nav {
     margin-top: 0;
   }
 }
+
+/*.initial-content{
+  height:125vh;
+  margin-top:0px;
+  display:block;
+  position:relative;
+}*/
 
 /*
    Global animation transition

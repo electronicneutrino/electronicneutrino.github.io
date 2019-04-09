@@ -1,0 +1,44 @@
+#bookWrapper{
+  background-color:aqua;
+  width:80vw;
+  margin-right:10vw;
+  height:94vh;
+  margin-top:3vh;
+  margin-bottom:3vh;
+  float:right;
+}
+
+#page{
+  width:35vw;
+  position:relative;
+  background-color:#EBEBE7;
+  margin-right:0px;
+  float:right;
+  padding:25px;
+  height:100%;
+  padding:5px;
+  overflow:hidden;
+}
+
+#inner-page{
+  border-width: 3px;
+  border-color: #5F4E51;
+  border-style:solid;
+  padding:25px;
+  height:100%;
+  overflow-y:auto;
+}
+
+#tabs{
+  margin-right:0px;
+  float:right;
+  height:100%;
+  padding:5px;
+  overflow:hidden;
+
+  width:5vw;
+  height:100%;
+  background-color:green;
+  display:block;
+  position:relative;
+}
