@@ -1,1 +1,0 @@
-This is basically just Component wise derivatives for directional derivatives, but in specific directions. 
