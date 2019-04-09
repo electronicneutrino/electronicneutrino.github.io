@@ -11,7 +11,7 @@
   z-index:100;
   @include clearfix;
   float: left;
-  position:absolute;
+  position:fixed;
   margin-left: -280px;
   margin-right: 0;
   height: 100vh;
