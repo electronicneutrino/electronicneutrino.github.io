@@ -29,8 +29,28 @@ Let $(\vec{x}_k)_{k=1}^{\infty}$ be a sequence of points in $\mathbb{R}^n$ where
 <!-- proof go here -->
 <div id="proof">
   <h2>Proof</h2>
-  Coming soon
+  Suppose that $(\vec{x}_k)$ converges to $\vec{a}$
+  <br>
+  Let $i\in\{1, 2, \dots, n \}$ and $\epsilon>0$. Convergence means that there exists some $N$ such that $||\vec{x}_k-\vec{a}||<\epsilon$ for all $k\geq N$. By the definition of the Euclidean norm,
+  $$\begin{align}
+||\vec{x}_k-\vec{a}|| &=(\sum_{j=1}^n (x_{j, k}-a_j)^2)^{1/2} \\
+& \geq ||x_{k, i}-a_i||,
+\end{align}$$
+(as in the distance between two components can't be greater than the norm).
+This means that for all $k\geq N_i=N$, we have $|x_{k, i}-a_i|\leq ||\vec{x}_k-\vec{a}||<\epsilon$, which means that each component converges, as desired.
+<br><br>
+Now assume that $x_k, j$ converges to $a_j$. <br> Let $\epsilon>0$, $\bar{\epsilon} =\epsilon/\sqrt{n}$. Because we have component-wise convergence, then for each $i\in\{1, \dots, n\}$, there exists some $N_i$ such that $|x_{k, i}-a_i|<\bar{\epsilon}$ for all $k\geq N_i$. <br>
+Now let $N=\max\{N_i\}$, which implies that $|x_{k, i}-a_i|<\bar{\epsilon}$ for all $k\geq N$. Then that means
+$$\begin{align}
+||\vec{x}_k-\vec{a}||&=(\sum_{i=1}^n (x_{k, i}-a_i)^2)^{1/2} \\
+&\leq (\sum_{i=1}^n \bar{\epsilon}^2)^{1/2} \\
+&=(n(\epsilon/\sqrt{n})^2)^{1/2}\\
+&=\epsilon,
+\end{align}$$ and hence $||\vec{x}_k-\vec{a}||<\epsilon$ for $k\geq N$.
+
+
 </div>
+
 
 
 <!-- related go here -->
