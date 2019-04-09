@@ -6,6 +6,8 @@
   margin-top:3vh;
   margin-bottom:3vh;
   float:right;
+  color:#BEDB7A;
+  box-shadow: 5px 10px 10px #5F4E51;
 }
 
 #page{
@@ -18,6 +20,12 @@
   height:100%;
   padding:5px;
   overflow:hidden;
+  color:#5F4E51
+}
+
+#page h2{
+  color:#82A655;
+  margin-top:10px;
 }
 
 .inner-page{
@@ -47,14 +55,19 @@
 
 .activeTab{
   background-color:#EBEBE7;
+  color:#82A655;
 }
 
 .idleTab{
   background-color:#BAA8A4;
+  color:#BEDB7A;
 }
 
 .tab{
   width:100%;
-  padding:5px;
-  height:80px
+  padding:20px;
+  height:80px;
+  border-bottom-color: #BEDB7A;
+  border-bottom-style:solid;
+  border-bottom-width: thin;
 }
