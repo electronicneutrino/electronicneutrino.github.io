@@ -32,8 +32,10 @@ layout: theorems
 <!-- proof go here -->
 <div id="proof">
   <h2>Proof</h2>
+  The idea for the proof is that we use directional derivatives, and a scalar $h$ to approach $0$.
+  <hr>
   We show that if $\vec{a}$ is a local maximum, then $\vec{a}$ is a critical point of $f$.<br>
-  If $\vec{a}$ is a local maximum, then that means there exists some $\delta > 0$ such that for all $\vec{x}\in B_{\delta}(\vec{a})$, we have that $f(\vec{x})\leq f(\vec{a})$. That means that $f(\vec{a}+h\vec{u})-f(\vec{a})\leq 0$ for all $h\norm{\vec{u}}<\delta$. Then we get
+  If $\vec{a}$ is a local maximum, then that means there exists some $\delta > 0$ such that for all $\vec{x}\in B_{\delta}(\vec{a})$, we have that $f(\vec{x})\leq f(\vec{a})$. Let $\vec{u}$ be a unit vector. That means that $f(\vec{a}+h\vec{u})-f(\vec{a})\leq 0$ for all $h<\delta$. Then we get
   $$\begin{align}
 \lim_{h\to 0^+}\frac{f(\vec{a}+h\vec{u})-f(\vec{a})}{h}\leq 0
 \end{align}$$ and $$\begin{align}
@@ -42,7 +44,7 @@ layout: theorems
 as coming from the left $h$ is negative. Since the gradient exists, that means the limit exists for all unit vectors $u$, and hence we require that the limits be equal for all $u$, which means for all unit vectors $u$ the derivative is
 $$\begin{align}
 \lim_{h\to 0 } \frac{f(\vec{a}+h\vec{u})-f(\vec{a})}{h}=0
-\end{align}$$
+\end{align}$$. <br> A similar argument follows for showing that the local minimum is a critical point.
 
 </div>
 
