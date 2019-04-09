@@ -33,10 +33,17 @@ layout: theorems
 <div id="proof">
   <h2>Proof</h2>
   We show that if $\vec{a}$ is a local maximum, then $\vec{a}$ is a critical point of $f$.<br>
-  If $\vec{a}$ is a local maximum, then that means there exists some $\delta > 0$ such that for all $\vec{x}\in B_{\delta}(\vec{a})$, we have that $f(\vec{x})\leq f(\vec{a})$. That means that $f(\vec{a}+\vec{h})-f(\vec{a})\leq 0$ for all $\norm{\vec{h}}<\delta$. Then we get
+  If $\vec{a}$ is a local maximum, then that means there exists some $\delta > 0$ such that for all $\vec{x}\in B_{\delta}(\vec{a})$, we have that $f(\vec{x})\leq f(\vec{a})$. That means that $f(\vec{a}+h\vec{u})-f(\vec{a})\leq 0$ for all $h\norm{\vec{u}}<\delta$. Then we get
   $$\begin{align}
-\lim_{\vec{h}\to\vec{0}^+}\frac{f(\vec{a}+\vec{h})-f(\vec{a})}{\norm{\vec{h}}}\leq 0
+\lim_{h\to 0^+}\frac{f(\vec{a}+h\vec{u})-f(\vec{a})}{h}\leq 0
+\end{align}$$ and $$\begin{align}
+\lim_{h\to 0^-}\frac{f(\vec{a}+h\vec{u})-f(\vec{a})}{h}\geq 0,
 \end{align}$$
+as coming from the left $h$ is negative. Since the gradient exists, that means the limit exists for all unit vectors $u$, and hence we require that the limits be equal for all $u$, which means for all unit vectors $u$ the derivative is
+$$\begin{align}
+\lim_{h\to 0 } \frac{f(\vec{a}+h\vec{u})-f(\vec{a})}{h}=0
+\end{align}$$
+
 </div>
 
 
