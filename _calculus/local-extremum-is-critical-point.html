@@ -5,13 +5,15 @@ layout: theorems
 <!-- Theorem goes here -->
 <div id="theorem">
   <h2>Local Extremum and Critical Points</h2>
-  Let $A\subseteq\mathbb{R}^n$, $\vec{a}\in \text{int}(A)$, and $f:A\to\mathbb{R}$. If</div>
+  Let $A\subseteq\mathbb{R}^n$, $\vec{a}\in \text{int}(A)$, and $ \vec{a} $ $f:A\to\mathbb{R}$. If $\vec{a}$ is a local minimum or maximum and the gradient of the function exists at $\vec{a}$ (ie. $\nabla f(\vec{a})$ exists), then $\vec{a}$ is a critical point of $f$.
+</div>
 
 
 <!-- Concepts go here -->
 <div id="concepts">
   <h2>Concepts</h2>
-  Coming soon
+  In multivariable calculus, a critical point is either a local minimum, a local maximum, or a saddle point. This theorem says that if a point inside the interior of the preimage is a local minimum or maximum, then it must be a critical point. <br>
+  Only on the boundry points might a point be a local maximum or minimum and not be a critical point.
 </div>
 
 
@@ -30,7 +32,11 @@ layout: theorems
 <!-- proof go here -->
 <div id="proof">
   <h2>Proof</h2>
-  Coming soon
+  We show that if $\vec{a}$ is a local maximum, then $\vec{a}$ is a critical point of $f$.<br>
+  If $\vec{a}$ is a local maximum, then that means there exists some $\delta > 0$ such that for all $\vec{x}\in B_{\delta}(\vec{a})$, we have that $f(\vec{x})\leq f(\vec{a})$. That means that $f(\vec{a}+\vec{h})-f(\vec{a})\leq 0$ for all $\norm{\vec{h}}<\delta$. Then we get
+  $$\begin{align}
+\lim_{\vec{h}\to\vec{0}^+}\frac{f(\vec{a}+\vec{h})-f(\vec{a})}{\norm{\vec{h}}}\leq 0
+\end{align}$$
 </div>
 
 
