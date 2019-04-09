@@ -1,7 +1,7 @@
 #bookWrapper{
   background-color:aqua;
-  width:80vw;
-  margin-right:10vw;
+  width:86vw;
+  margin-right:4vw;
   height:94vh;
   margin-top:3vh;
   margin-bottom:3vh;
@@ -20,7 +20,7 @@
   overflow:hidden;
 }
 
-#inner-page{
+.inner-page{
   border-width: 3px;
   border-color: #5F4E51;
   border-style:solid;
@@ -29,16 +29,32 @@
   overflow-y:auto;
 }
 
-#tabs{
+.SideTabs{
   margin-right:0px;
   float:right;
   height:100%;
-  padding:5px;
   overflow:hidden;
-
-  width:5vw;
+  width:8vw;
   height:100%;
-  background-color:green;
+  background-color:#BAA8A4;
   display:block;
   position:relative;
+}
+
+#hidden{
+  display:none;
+}
+
+.activeTab{
+  background-color:#EBEBE7;
+}
+
+.idleTab{
+  background-color:#BAA8A4;
+}
+
+.tab{
+  width:100%;
+  padding:5px;
+  height:80px
 }

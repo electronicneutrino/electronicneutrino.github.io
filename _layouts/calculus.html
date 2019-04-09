@@ -1,24 +1,82 @@
 ---
 layout: default
 ---
+<script>
+  function showRight(param_div_id) {
+    $('#inner-pageRight div').hide();
+    $('#inner-pageRight #' + param_div_id).show();
+    $("#tabsRight div").removeClass("activeTab");
+    $("#tabsRight div").addClass("idleTab");
+  /*  $("#tabsRight div").removeClass("idleTab");*/
+    $("#tabsRight #" + param_div_id).removeClass("idleTab");
+    $("#tabsRight #" + param_div_id).addClass("activeTab");
+    console.log("#tabsRight #" + param_div_id);
+  }
+  function showLeft(param_div_id){
+    $('#inner-pageLeft div').hide();
+    $('#inner-pageLeft #' + param_div_id).show();
+    $("#tabsLeft div").removeClass("activeTab");
+    $("#tabsLeft div").addClass("idleTab");
+    $("#tabsLeft #" + param_div_id).removeClass("idleTab");
+    $("#tabsLeft #" + param_div_id).addClass("activeTab");
+    console.log("#tabsLeft #" + param_div_id);
+  }
+  function showAllLeft(){
+    $('#inner-pageLeft div').show();
+    $("#tabsLeft div").removeClass("activeTab");
+    $("#tabsLeft div").addClass("idleTab");
+    $("#tabsLeft #all").removeClass("idleTab");
+    $("#tabsLeft #all").addClass("activeTab");
+  }
+  function showAllRight(){
+    $('#inner-pageRight div').show();
+    $("#tabsRight div").removeClass("activeTab");
+    $("#tabsRight div").addClass("idleTab");
+    $("#tabsRight #all").removeClass("idleTab");
+    $("#tabsRight #all").addClass("activeTab");
+  }
+</script>
+
 <article class="calculus">
 
 <div id="bookWrapper">
-  <div id="tabs" class="tabs1">
+  <div id="tabsRight" class="SideTabs">
+    <div id="all" class="tab activeTab" onclick="showAllRight()">
+      Page
+    </div>
+    <div id="theorem" class="tab" onclick="showRight('theorem')">
+      theorem
+    </div>
+    <div id="proof" class="tab" onclick="showRight('proof')">
+      proof
+    </div>
   </div>
   <div id="page" class="page1">
-    <div id="inner-page" class="inner-page1">
-    {{ content }}
+    <div id="inner-pageRight" class="inner-page">
+        {{ content }}
     </div>
   </div>
   <div id="page" class="page2">
-    <div id="inner-page" class="inner-page2">
-    {{ content }}
+    <div id="inner-pageLeft" class="inner-page">
+        {{ content }}
     </div>
   </div>
-  <div id="tabs" class="tabs2">
+  <div id="tabsLeft" class="SideTabs">
+    <div id="all" class="tab activeTab" onclick="showAllLeft()">
+      Page
+    </div>
+    <div id="theorem" class="tab" onclick="showLeft('theorem')">
+    theorem
+  </div>
+  <div id="proof" class="tab" onclick="showLeft('proof')">
+    proof
+  </div>
   </div>
 </div>
 
 
 </article>
+
+<div id="hidden">
+    {{ content }}
+</div>
