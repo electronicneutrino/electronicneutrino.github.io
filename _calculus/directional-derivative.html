@@ -4,9 +4,9 @@ layout: definitions
 
 <!-- Definition goes here -->
 <div id="definition">
-  Let $I$ be a box, partitioned by $P$ with the associated indexing set $J$. For each $\vec{a}\in J$, we define the <mark>subbox</mark> $I^{(\vec{a})}$ to be
+  Let $A\subseteq\mathbb{R}^n$ be open, $f:A\to\mathbb{R}^m$, and $\vec{u}$ a unit vector. The directional derivative of $f$ in the direction $\vec{y}$, denoted $D_{\vec{u}}$, is defined as
   $$\begin{align}
-I^{(\vec{a})}:=[x_1^{(a_1-1)}, x_1^{a_1}]\times\dots\times[x_n^{(a_n-1)}, x_n^{a_n}]
+D_{\vec{h}}(\vec{a})=\lim_{h\to\0}\frac{f(\vec{a}+h\vec{u})-f(\vec{a})}{|h|}
 \end{align}$$
 </div>
 
