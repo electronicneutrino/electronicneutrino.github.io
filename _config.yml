@@ -284,6 +284,12 @@ collections:
   calculus:
     output: true
     permalink: /calculus/:name
+  linear-algebra:
+    output: true
+    permalink: /linear-algebra/:name
+  quantum-mechanics:
+    output: true
+    permalink: /quantum-mechanics/:name
 
 
 # Defaults

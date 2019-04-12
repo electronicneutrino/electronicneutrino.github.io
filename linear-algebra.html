@@ -1,0 +1,11 @@
+---
+layout: archive
+---
+<h2> Linear Algebra Index </h2>(alphabetized)
+<ul>
+{% for linear-algebra in site.linear-algebra %}
+<li><a href="{{ linear-algebra.url | prepend: site.baseurl }}">
+        {{ linear-algebra.title }}
+</a></li>
+{% endfor %}
+</ul>

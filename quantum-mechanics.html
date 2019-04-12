@@ -1,0 +1,11 @@
+---
+layout: archive
+---
+<h2> Quantum Mechanics Index </h2>(alphabetized)
+<ul>
+{% for quantum-mechanics in site.quantum-mechanics %}
+<li><a href="{{ quantum-mechanics.url | prepend: site.baseurl }}">
+        {{ quantum-mechanics.title }}
+</a></li>
+{% endfor %}
+</ul>
