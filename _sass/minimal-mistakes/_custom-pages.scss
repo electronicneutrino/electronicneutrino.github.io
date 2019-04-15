@@ -1,6 +1,7 @@
 @media (min-width:1200px){
 
   #page{
+     background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=EBEBE700&noise=bdc9bd&density=69&opacity=18);
     width:35vw;
     position:relative;
     background-color:#EBEBE7;
@@ -44,6 +45,7 @@
 }
 
 #bookWrapper{
+  font-family: 'Caveat', cursive;
   background-color:#BAA8A4;
   width:86vw;
   margin-right:4vw;
@@ -55,14 +57,19 @@
   box-shadow: 5px 10px 10px #5F4E51;
 }
 
+h2{
+    font-family: 'Cabin Sketch', cursive;
+}
 
 #hidden{
   display:none;
 }
 
 .activeTab{
+  background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=EBEBE700&noise=bdc9bd&density=69&opacity=18);
   background-color:#EBEBE7;
   color:#82A655;
+  text-decoration: underline;
 }
 
 .idleTab{
@@ -70,8 +77,10 @@
   color:#BEDB7A;
 }
 .tab{
+  font-family: 'Pompiere', cursive;
   width:100%;
-  padding:20px;
+  font-size:38px;
+  padding:15px;
   height:80px;
   border-bottom-color: #BEDB7A;
   border-bottom-style:solid;
@@ -82,12 +91,33 @@
   #tabsLeft{
     display:none;
   }
+  #tabsRight{
+    float:left;
+  }
   .page2{
     display:none;
   }
-  #page{
-    width:70vw;
+
+  .inner-page{
+    border-width: 3px;
+    border-color: #5F4E51;
+    border-style:solid;
+    padding:25px;
+    height:100%;
+    overflow-y:auto;
   }
+    #page{
+      width:70vw;
+      position:relative;
+      background-color:#EBEBE7;
+      margin-right:0px;
+      float:left;
+      padding:25px;
+      height:100%;
+      padding:5px;
+      overflow:hidden;
+      color:#5F4E51
+    }
   .SideTabs{
     width:15vw;
   }

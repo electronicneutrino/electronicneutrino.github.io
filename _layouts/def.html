@@ -1,0 +1,44 @@
+---
+layout: custom
+---
+
+<div id="tabsRight" class="SideTabs">
+  <div id="all" class="tab activeTab" onclick="showAllRight()">
+    FullPage
+  </div>
+  <div id="overview" class="tab" onclick="showRight('overview')">
+    Overview
+  </div>
+  <div id="notations" class="tab" nclick="showRight('notations')">
+    Notations
+  </div>
+  <div id="concepts" class="tab"  onclick="showRight('concepts')">
+    Concepts
+  </div>
+</div>
+
+<div id="page" class="page1">
+  <div id="inner-pageRight" class="inner-page">
+      {{ content }}
+  </div>
+</div>
+<div id="page" class="page2">
+  <div id="inner-pageLeft" class="inner-page">
+      {{ content }}
+  </div>
+</div>
+
+<div id="tabsLeft" class="SideTabs">
+  <div id="all" class="tab activeTab" onclick="showAllLeft()">
+    FullPage
+  </div>
+  <div id="overview" class="tab" onclick="showLeft('overview')">
+    Overview
+  </div>
+  <div id="notations" class="tab" onclick="showLeft('notations')">
+    Notations
+  </div>
+  <div id="concepts" class="tab" onclick="showLeft('concepts')">
+    Concepts
+  </div>
+</div>

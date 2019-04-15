@@ -5,31 +5,49 @@ layout: theorems
 <!-- Theorem goes here -->
 <div id="theorem">
   <h2>Differentiable Functions are Continuous</h2>
-  Let $A\subseteq\mathbb{R}^n$, $\vec{a}\in \text{int}(A)$, and $f:A\to\mathbb{R}^m$. If $f$ is differentiable at $\vec{A}$, then it is continuous at $\vec{a}$. 
+  Let $A\subseteq\mathbb{R}^n$, $\vec{a}\in \text{int}(A)$, and $f:A\to\mathbb{R}^m$. If $f$ is differentiable at $\vec{A}$, then it is continuous at $\vec{a}$.
 </div>
 
 <!-- Concepts go here -->
 <div id="concepts">
   <h2>Concepts</h2>
-  Coming soon
+  If a function is differentiable at a point, then it has to be continuous at a point.<br> this seems to only apply for single variable functions. Multivariable, you can have a function that's not continuous at a point but the derivative still existing. Is it because of the different limit needing to exist?
 </div>
 
 <!-- hypothesis go here -->
 <div id="hypothesis">
   <h2>Hypothesis</h2>
-  Coming soon
+  The function needs to be differentiable, as the one-variable limit definition of derivatives is used in the proof.
 </div>
 
 <!-- results go here -->
 <div id="results">
   <h2>Results</h2>
-  Coming soon
+  Continuity leads to A Lot.
 </div>
 
 <!-- proof go here -->
 <div id="proof">
   <h2>Proof</h2>
-  Coming soon
+  To prove that it is continuous at a point, we need the limit of $f(a+h)-f(a)$ to go to $0$ as $h$ goes to $0$. Notice how this is the numerator in the definition of the derivative. <hr>
+  Let $f$ be a function, and let $f$ be differentiable at $a$. Then for any $h\neq= 0$, we have
+  $$\begin{align}
+  f(a+h)-f(a)=h\cdot\frac{f(a+h)-f(a)}{h}
+\end{align}$$. Taking the limit as $h$ goes to $0$, we get
+$$\begin{align}
+\lim_{h\to 0}[f(a+h)-f(a)]&=\lim_{h\to 0}\times \lim_{h\to 0}\frac{f(a+h)-f(a)}{h}\\
+&=0\times f'(a)
+&=0,
+\end{align}$$ and hence
+$$\begin{align}
+\lim_{h\to 0}f (a+h)=f(a)
+\end{align}$$
+Let $x=a+h$. Then $\lim_{h\to 0}f(a+h)=\lim_{x\to a}f(x)$ giving
+$$\begin{align}
+\lim_{h\to 0} f(a+h)&=f(a)\\
+\lim_{x\to a}f(x)&=f(a)
+\end{align}$$.
+Hence <a href="">\lim_{x\to a}f(x) = f(a) </a> means the function the continuous at $a$.  
 </div>
 
 

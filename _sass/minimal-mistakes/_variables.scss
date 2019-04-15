@@ -6,10 +6,10 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 16 !default;
+$doc-font-size: 26px !default;
 
 /* paragraph indention */
-$paragraph-indent: false !default; // true, false (default)
+$paragraph-indent: true !default; // true, false (default)
 $indent-var: 1.3em !default;
 
 /* system typefaces */
@@ -28,20 +28,24 @@ $times: Times, serif !default;
 $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
+$cabin-sketch: 'Cabin Sketch', cursive !default;
+$east-sea: 'Hi Melody', cursive !default;
+$over-rainbow:  'Over the Rainbow', cursive !default;
 
-$global-font-family: $sans-serif !default;
-$header-font-family: $sans-serif !default;
-$caption-font-family: $serif !default;
+
+$global-font-family: $east-sea !default;
+$header-font-family: $cabin-sketch !default;
+$caption-font-family: $over-rainbow !default;
 
 /* type scale */
-$type-size-1: 2.441em !default; // ~39.056px
-$type-size-2: 1.953em !default; // ~31.248px
-$type-size-3: 1.563em !default; // ~25.008px
-$type-size-4: 1.25em !default; // ~20px
-$type-size-5: 1em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
-$type-size-7: 0.6875em !default; // ~11px
-$type-size-8: 0.625em !default; // ~10px
+$type-size-1: 3em !default; // ~39.056px
+$type-size-2: 2.5em !default; // ~31.248px
+$type-size-3: 1.8em !default; // ~25.008px
+$type-size-4: 1.5em !default; // ~20px
+$type-size-5: 1.3em !default; // ~16px
+$type-size-6: 1em !default; // ~12px
+$type-size-7: 0.80em !default; // ~11px
+$type-size-8: 0.73em !default; // ~10px
 
 /*
    Colors

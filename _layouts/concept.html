@@ -1,0 +1,57 @@
+---
+layout: custom
+---
+
+<div id="tabsRight" class="SideTabs">
+  <div id="all" class="tab activeTab" onclick="showAllRight()">
+    FullPage
+  </div>
+  <div id="overview" class="tab" onclick="showRight('overview')">
+    overview
+  </div>
+  <div id="significance" class="tab" onclick="showRight('significance')">
+    significance
+  </div>
+  <div id="derivation" class="tab" onclick="showRight('derivation')">
+    derivation
+  </div>
+  <div id="related" class="tab" onclick="showRight('related')">
+    related experiments
+  </div>
+  <div id="concepts" class="tab" onclick="showRight('concepts')">
+    associated concepts
+  </div>
+</div>
+
+
+<div id="page" class="page1">
+  <div id="inner-pageRight" class="inner-page">
+      {{ content }}
+  </div>
+</div>
+  <div id="page" class="page2">
+  <div id="inner-pageLeft" class="inner-page">
+      {{ content }}
+  </div>
+</div>
+
+<div id="tabsLeft" class="SideTabs">
+  <div id="all" class="tab activeTab" onclick="showAllLeft()">
+    FullPage
+  </div>
+  <div id="overview" class="tab" onclick="showLeft('overview')">
+    overview
+  </div>
+  <div id="significance" class="tab" onclick="showLeft('significance')">
+    significance
+  </div>
+  <div id="derivation" class="tab" onclick="showLeft('derivation')">
+    derivation
+  </div>
+  <div id="related" class="tab" onclick="showLeft('related')">
+    related experiments
+  </div>
+  <div id="concepts" class="tab" onclick="showLeft('concepts')">
+    associated concepts
+  </div>
+</div>

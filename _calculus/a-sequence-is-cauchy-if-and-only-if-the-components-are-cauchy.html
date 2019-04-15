@@ -1,5 +1,5 @@
 ---
-layout: theorems
+layout: equivalence
 ---
 
 <!-- Theorem goes here -->
@@ -11,19 +11,21 @@ layout: theorems
 <!-- Concepts go here -->
 <div id="concepts">
   <h2>Concepts</h2>
-  Coming soon
+  This relates Cauchy sequences in vector spaces and cauchy sequences of components of the vector.  <br>
+  It would not make sense if one component of the vector is a cauchy sequence (or not at all a cauchy sequence) while the vector itself is. Where is that one component going. It's not getting any closer to the point we want.
 </div>
 
 <!-- hypothesis go here -->
 <div id="hypothesis">
-  <h2>Hypothesis</h2>
-  Coming soon
+  <h2>If</h2>
+  We have that $(x_{k, i})_{k=1}^{\infty}$ for each $1 \leq i\leq n$ converces to $a_i$. By definition, this means for each $1\leq i\leq n$, for any $\epsilon>0$, there exists some $N_i\in\mathbb{N}$ such that $|x_{k, i}-a_i|<\epsilon$ for all $k\geq N_i$. <br>
+  If we take $N=\text{max}\{N_i:1\leq i\leq n\}$, then $|x_{k, i}-a_i|<\epsilon$ for all $1\leq i\leq n$ and $k\geq N$.
 </div>
 
 <!-- results go here -->
 <div id="results">
-  <h2>Results</h2>
-  Coming soon
+  <h2>Only If</h2>
+  We have that $(\vec{x}_k)_{k=1}^\infty$ converges to $\vec{a}$. That means for all $\epsilon>0$, there exists some $N\in\mathbb{N}$ such that $||\vec{x}_k-\vec{a}||<\epsilon$ for all $k\geq N$.
 </div>
 
 <!-- proof go here -->
@@ -36,5 +38,8 @@ layout: theorems
 <!-- related go here -->
 <div id="related">
   <h2>Related</h2>
-  Coming soon
+  <ul>
+    <li>Sequences</li>
+    <li>Completeness</li>
+  </ul>
 </div>

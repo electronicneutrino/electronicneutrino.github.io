@@ -6,17 +6,17 @@ layout: custom
   <div id="all" class="tab activeTab" onclick="showAllRight()">
     FullPage
   </div>
-  <div id="theorem" class="tab" onclick="showRight('theorem')">
-    result
+  <div id="overview" class="tab" onclick="showRight('overview')">
+    overview
   </div>
-  <div id="concepts" class="tab" onclick="showRight('concepts')">
-    concepts
+  <div id="background" class="tab" onclick="showRight('background')">
+    background
   </div>
-  <div id="hypothesis" class="tab" onclick="showRight('hypothesis')">
-    hypothesis
+  <div id="interpretation" class="tab" onclick="showRight('interpretation')">
+    Interpretation
   </div>
-  <div id="results" class="tab" onclick="showRight('results')">
-    implications
+  <div id="explaination" class="tab" onclick="showRight('explaination')">
+    Only If
   </div>
   <div id="proof" class="tab" onclick="showRight('proof')">
     proof
@@ -26,18 +26,16 @@ layout: custom
   </div>
 </div>
 
-
 <div id="page" class="page1">
   <div id="inner-pageRight" class="inner-page">
       {{ content }}
   </div>
 </div>
-  <div id="page" class="page2">
+<div id="page" class="page2">
   <div id="inner-pageLeft" class="inner-page">
       {{ content }}
   </div>
 </div>
-
 
 <div id="tabsLeft" class="SideTabs">
   <div id="all" class="tab activeTab" onclick="showAllLeft()">
@@ -50,10 +48,10 @@ layout: custom
     concepts
   </div>
   <div id="hypothesis" class="tab" onclick="showLeft('hypothesis')">
-    hypothesis
+    If
   </div>
   <div id="results" class="tab" onclick="showLeft('results')">
-    implications
+    Only If
   </div>
   <div id="proof" class="tab" onclick="showLeft('proof')">
     proof
