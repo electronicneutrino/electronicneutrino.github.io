@@ -1,0 +1,149 @@
+:root {
+  --passiveback:#B2DFB4;
+  --titles: #EC3F74;
+  --subtitle: #EA7D9D;
+  --textcol:#A81C36;
+  --page: #FCE9CB;
+  --tabs:#D8FFD2;
+  /* background colour is the same as page colour */
+  --pageurl:url(http://api.thumbr.it/whitenoise-361x370.png?background=FCE9CB00&noise=bdc9bd&density=69&opacity=18);
+  /* background colour is title-alt color */
+  --footerurl:url(http://api.thumbr.it/whitenoise-361x370.png?background=EA7D9Dff&noise=d6e8d6&density=76&opacity=54);
+}
+
+html{
+  background-color:var(--passiveback);
+}
+body{
+  background-color:var(--passiveback);
+}
+
+input,
+textarea,
+select {
+  background-color:var(--passiveback);
+}
+
+/* title colours */
+ ul a:hover{
+   color: var(--titles)!important;
+ }
+#page h2{
+    color: var(--titles);
+  }
+
+.activeTab{
+    color: var(--titles);
+}
+body{
+    color: var(--titles);
+}
+form legend{
+    color: var(--titles);
+}
+label{
+    color: var(--titles);
+  }
+input{
+    color: var(--titles);
+  }
+textarea{
+    color: var(--titles);
+  }
+select{
+    color: var(--titles);
+  }
+.toc__menu  a &:hover{
+    color: var(--titles);
+  }
+.social-icons .fas, .social-icons .fab, .social-icons .far, .social-icons .fal {
+    color: var(--titles);
+  }
+.page__footer{
+    color: var(--titles);
+}
+
+.page__footer, u, ins, abbr[title], abbr[data-original-title]  {
+  border-color: var(--titles);
+}
+
+input:focus, textarea:focus {
+  box-shadow: inset 0 1px 3px rgba(var(--titles), 0.06),
+    0 0 5px rgba(var(--titles), 0.7);
+}
+
+.taxonomy__title {
+  color: lighten(var(--titles), 60%);
+}
+
+.taxonomy__count,.back-to-top  {
+  color: lighten(var(--titles), 50%);
+}
+
+
+/* titles alt */
+mark, .page__footer, .masthead, .greedy-nav {
+  background-color: var(--subtitle);
+}
+
+ul a, ul a:visited{
+    color: var(--subtitle)!important;
+}*/
+
+#bookWrapper{
+  color:var(--subtitle);
+}
+.activeTab{
+  color:var(--subtitle);
+}
+::-moz-selection{
+  color:var(--subtitle);
+}
+::selection{
+  color:var(--subtitle);
+}
+
+.inner-page{
+  border-color: var(--subtitle);
+}
+
+.page__footer {
+  background-image: var(--footerurl);
+}
+
+/* text */
+mark, #page{
+  color:var(--textcol);
+}
+
+::-webkit-scrollbar-thumb{
+  background:var(--textcol);
+}
+
+::-moz-selection{
+  background: var(--textcol);
+}
+::selection{
+  background: var(--textcol);
+}
+
+hr, .inner-page, .link{
+  border-color: var(--textcol);
+}
+
+#bookWrapper{
+  box-shadow: 5px 10px 10px var(--textcol);
+}
+
+/* page-background */
+
+.activeTab, #page, .page{
+  background-image: var(--pageurl);
+  background-color: var(--page);
+}
+
+/* idle tabs */
+
+::-webkit-scrollbar-track, .SideTabs, #bookWrapper, .idleTab{
+  background-color: var(--tabs);
+}
