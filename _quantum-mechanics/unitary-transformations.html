@@ -4,18 +4,32 @@ layout: def
 
 <!-- Definition goes here -->
 <div id="overview">
+  The unity operator basically changes a frame of reference <br>
+  If $U^{\dagger}U=1$, where $U^{\dagger}$ is the Hermitian conjungate. For a constant operator, $U^{\dagger}$ is the complex conjungate of the matrix.
 </div>
 
 <!-- Notations -->
 <div id="notations">
   <h2>Notations</h2>
-  Coming soon
+  The unity operator is often denoted by a $U$. All that's required for an operator to be unity is $U^{\dagger}U=1$.
 </div>
 
 <!-- Concepts go here -->
 <div id="concepts">
   <h2>Concepts</h2>
-  Coming soon
+  Let $A$ be an arbitrary operator. Then
+  $$\begin{align*}
+\langle A \rangle &= \langle \psi| A|\psi\rangle  \\
+&=\langle \psi|U^{\dagger}U A U^{\dagger} U|\psi\rangle \\
+&=\langle \psi'| A' |\psi\rangle,
+\end{align*}$$
+where $A'=UAU^{\dagger}$. Since $U^{\dagger}$ is the Hermitian conjungate of $U$, then $\langle \psi|U^{\dagger}=\langle \psi'|$ and $U|\psi'\rangle=|\psi'\rangle$, where $|\psi'\rangle$ is the new state in the new reference frame.
+<br>
+That is, if we transform a quantum state $|\psi\rangle$ by an unitary operator $U$ expectation values of an arbitary operator $A$ does not change as long as we transform $A$ into $A'=UAU^{\dagger}$. <br>
+For exaple,
+$$\begin{align*}
+U=\begin{bmatrix}e^{i\theta/2} & 0 \\ 0 & e^{-i\theta/2}\end{bmatrix}
+\end{align*}$$ rotates a frame of reference by $\theta$.
 </div>
 
 <!-- Related goes here -->

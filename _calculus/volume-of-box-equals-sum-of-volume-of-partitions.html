@@ -6,21 +6,21 @@ layout: theorems
 <div id="theorem">
   <h2>The Volume of a Box is Equal to the Sum of the Volume of its Partitions </h2>
   Let $I\subseteq\mathbb{R}^n$ be a box and let $P$ be a partition with indexing set $J$ and subboxes $\{I^{(\vec\alpha)}:\vec{\alpha}\in J\}$. Then
-  $$\begin{align}
+  $$\begin{align*}
 \mu(I)=\sum_{\vec{\alpha}\in J}\\ \mu(I^{\vec{\alpha}})=\prod_{k=1}^n(x_k^{(\alpha_k)}-x_k^{(\alpha_k-1)}),
-\end{align}$$
+\end{align*}$$
 for each $k\in\{1, \dots, n \}$, where
-$$\begin{align}
+$$\begin{align*}
 (b_k-a_k)=\sum_{i=1}^{l_k}(x_k^{(i)}-x_k^{(i-1)}).
-\end{align}$$
+\end{align*}$$
 Then using a combination of expanding, rearranging, and subsituting, we get
-$$\begin{align}
+$$\begin{align*}
 \mu(I)&=\prod_{k=1}^{n}\sum_{i=1}^{l_k}(x_{k}^{(i)}-x_k^{(i-1)})\\
 &=[\sum_{i=1}^{l_1}(x_k^{(\alpha_1)}-x_k^{(\alpha_1-1)})]\dots [\sum_{j=1}^{l_n}(x_k^{(\alpha_n)}-x_k^{(\alpha_n-1)})] \\
 &=\sum_{\alpha_1=1}^{l_1}\dots\sum_{\alpha_n=1}^{l_n}\prod_{k=1}^n (x_k^{(\alpha_k)}-x_k^{(\alpha_k-1)}) \\
 &=\sum_{\alpha\in J} \prod_{k=1}^n(x_k^{(\alpha_k)}-x_k^{(\alpha_k-1)})\\
 &=\sum_{\alpha\in J}\mu(I^{\vec{\alpha}}).
-\end{align}$$
+\end{align*}$$
 
 
 </div>
@@ -47,12 +47,12 @@ $$\begin{align}
 <div id="proof">
   <h2>Proof</h2>
   By definition,
-  $$\begin{align}
+  $$\begin{align*}
 \mu(I)&=\prod_{k=1}^{n} (b_k-a_k)\\ \mu(I^{(\vec{\alpha})})&=\prod_{k=1}^n (x_k^{\alpha_k}-x_k^{(\alpha_k-1)})
-\end{align}$$ for each $k\in\{ 1, \dots, n\}$, where $(b_k-a_k)=\sum_{i=1}^{l_k}(x_k^{(i)}-x_k^{(i-1)})$. Then we get
-$$\begin{align}
+\end{align*}$$ for each $k\in\{ 1, \dots, n\}$, where $(b_k-a_k)=\sum_{i=1}^{l_k}(x_k^{(i)}-x_k^{(i-1)})$. Then we get
+$$\begin{align*}
 
-\end{align}$$
+\end{align*}$$
 </div>
 
 

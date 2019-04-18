@@ -21,28 +21,28 @@ layout: concept
   We first want the possible states and associated eigenvalues for the energy operator $E$.
   <br>
   The operator is $H=[-\frac{\hbar}{2m}\frac{d^2}{dx^2}+V(x)]$, so we subsitute that into the eigenvector equation. <br>
-  $$\begin{align}
+  $$\begin{align*}
 [-\frac{\hbar}{2m}\frac{d^2}{dx^2}+V(x)]\psi(x)=E\psi(x)&=E\psi(x)\\
 \implies -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi&=[E-V(x)]\psi(x)\\
 \implies \frac{d^2}{dx^2}\psi(x)&=-\frac{2m}{\hbar^2}[E-V(x)]\psi(x).
-\end{align}$$<br>
+\end{align*}$$<br>
   Despite being a differential equation, this is not the same as schrodinger's equation. Solving this equation gives us the possible position states of the wavefunction and the associated energies (Schrodinger's would give the position state at a time $t$)<br>
 For the zones where $V_0=\infty$, the only solution to
-$$\begin{align}
+$$\begin{align*}
 \frac{d^2}{dx^2}\psi(x)=-\frac{2m}{\hbar^2}[E-\infty]\psi(x),
-\end{align}$$ where $E$ is finite is $\psi(x)=0$.<br>
+\end{align*}$$ where $E$ is finite is $\psi(x)=0$.<br>
 For the well from $x=0$ to $x=L$, we have $V(x)=0$. That gives us
-$$\begin{align}
+$$\begin{align*}
 \frac{d^2}{dx}\psi(x)=-\frac{2mE}{\hbar^2}\psi(x).
-\end{align}$$
+\end{align*}$$
 If we let $k=\sqrt{\frac{2mE}{\hbar^2}}$, then we can get
-$$\begin{align}
+$$\begin{align*}
 \frac{d^2}{dx}\psi(x)=-k^2\psi(x).
-\end{align}$$
+\end{align*}$$
 By inspection (or solving), we can see that $\psi(x)$ is a function of $\sin(x)$ or $\cos(x)$. Let's use $\sin(x)$. Then
-$$\begin{align}
+$$\begin{align*}
 \psi(x)=A\sin{(kx+c)},
-\end{align}$$ where $A$ is the normalization constant, $c$ is a phase shift, and $k=\sqrt{\frac{2mE}{\hbar^2}}$ (reminder we are finding the eigenvector right now). <br>
+\end{align*}$$ where $A$ is the normalization constant, $c$ is a phase shift, and $k=\sqrt{\frac{2mE}{\hbar^2}}$ (reminder we are finding the eigenvector right now). <br>
 Right now there are two things to take care of:
 <ul>
   <li>Normalization constant $A$</li>
@@ -50,43 +50,43 @@ Right now there are two things to take care of:
 </ul><br>
 
 We find the normalization constant. We require that
-$$\begin{align}
+$$\begin{align*}
 \langle E_n|E_n\rangle&=1 \\
 \implies \int_{-\infty}^{\infty}\psi_n^*(x)\psi_n(x)&=1\\
 &=\int_{\infty}^0\psi_n^*(x)\psi_n(x)dx+\int_{0}^L + \int_{L}^{\infty}\psi^*_n(x)\psi_n(x)dx,
-\end{align}$$
+\end{align*}$$
 Since $\psi(x)=0$ outside of $[0, L]$, then
-$$\begin{align}
+$$\begin{align*}
 \int_{-\infty}^{0}\psi_n^*(x)\psi_n(x)dx&=\int_{L}^{\infty}\psi_n^*(x)\psi(x)dx \\
 &=0,
-\end{align}$$ then
+\end{align*}$$ then
 we need
-$$\begin{align}
+$$\begin{align*}
 \int_{0}^{L}\psi_n^*\psi_n(x)dx &=1\\
 \implies \int_{0}^{L}A^2\sin^2(kx)&=1\\
 \implies A^2\int_{0}^{L}\sin^2(kx)&=1
-\end{align}$$
+\end{align*}$$
 The integral of $\sin^2(kx)$ is $\frac{2x-\sin x}{4}$. Anyway if we solve for $A$, assuming that $\sin(kL)=0$ as required by the boundry coundition, then
-$$\begin{align}
+$$\begin{align*}
 A^2=\sqrt{\frac{2}{L}}
-\end{align}$$
+\end{align*}$$
 <hr>
 For the eigenstates, we need that $\psi(0)=0$ and $\psi(L)=0$. $\psi(0)=\sqrt{\frac{2}{L}}\sin(0k)=\sqrt{\frac{2}{L}}\sin(0)$, and so $c=0$. For $\psi(L)=\sqrt{\frac{2}{L}}\sin(kL)$, this will be zero when $kL$ is a multiple of $\pi$, or $k=\frac{n/pi}{L}$, where $n$ is an integer (if $n=0$, then there is no particle. If $n<0$, there is a global phase change). Hence we require
-$$\begin{align}
+$$\begin{align*}
 \sqrt{\frac{2mE}{\hbar^2}}=\frac{n\pi}{L}
-\end{align}$$ solving for $E$ gives
-$$\begin{align}
+\end{align*}$$ solving for $E$ gives
+$$\begin{align*}
 E_n=\frac{\hbar^2 n^2 \pi^2}{2mL}.
-\end{align}$$
+\end{align*}$$
 Since $\hbar=\frac{h}{2\pi}$, then this can be simplified to
-$$\begin{align}
+$$\begin{align*}
 E_n=\frac{hn^2}{8mL^2}.
-\end{align}$$
+\end{align*}$$
 These are the allowed energy states, the energy eigenvalues. <br>
 Hence the eigenstate equation is
-$$\begin{align}
+$$\begin{align*}
 \frac{hn^2}{8mL^2}\sqrt{\frac{2}{L}}\psi(\frac{n\pi}{L}x)=E\psi_n(x),
-\end{align}$$ where the allowed energy levels are $E_n=\frac{hn^2}{8mL^2}$ with corresponding eigenstates $\psi(x)=\sqrt{\frac{2}{L}}\sin(\frac{n\pi x}{L})$
+\end{align*}$$ where the allowed energy levels are $E_n=\frac{hn^2}{8mL^2}$ with corresponding eigenstates $\psi(x)=\sqrt{\frac{2}{L}}\sin(\frac{n\pi x}{L})$
 </div>
 
 <!-- hypothesis go here -->

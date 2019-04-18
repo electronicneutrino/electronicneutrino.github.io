@@ -5,9 +5,9 @@ layout: concept
 <!-- Definition goes here -->
 <div id="overview">
 This is kind of like a finite well, but instead we have the potential increasing in a quadratic function instead of a sudden jump. That is,
-$$\begin{align}
-V(x)=\frac{1}{2}kx^2
-\end{align}$$ <br>
+$$\begin{align*}
+V(x)=\frac{1}{2}kx^2.
+\end{align*}$$
 Classically, a particle would sit at the very bottom. Quantum mechanically, due to the uncertainty principle, the particle can't just sit at the bottom, having zero energy.
 </div>
 
@@ -21,16 +21,16 @@ Classically, a particle would sit at the very bottom. Quantum mechanically, due 
 <div id="derivation">
   <h2>Derivation</h2>
   Once again we want to solve the eigenvalue equation $H\psi=E\psi$, where $H$ is the Hamiltonian. The total energy of the system is the potential energy plus the kinetic energy. The kinetic energy, written in the position basis, is
-  $$\begin{align}
+  $$\begin{align*}
 -\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2},
-\end{align}$$ while the potential energy is
-$$\begin{align}
+\end{align*}$$ while the potential energy is
+$$\begin{align*}
 V(x)=\frac{1}{2}kx^2\psi(x).
-\end{align}$$
-This is a pain to solve. We use ladder operators. $\hat{H}$ can be written in terms of laddter operators, where
-$$\begin{align}
-\hat{H}=\hbar\omega\hat{a}^{\dagger}\hat{a}+\frac{1}{2}\hbar\omega
-\end{align}$$
+\end{align*}$$
+This is a pain to solve. We use ladder operators. $\hat{H}$ can be written in terms of ladder operators, where
+$$\begin{align*}
+\hat{H}=\hbar\omega\hat{a}^{\dagger}\hat{a}+\frac{1}{2}\hbar\omega,
+\end{align*}$$ and $\hat{a}$ raises the energy level and $\hat{a}^{\dagger}$ lowers the energy. Thar means there's a state $\ket{E_0}$ for which the energy $E_0$ is the minimum possible energy for the system, and $\hat{a}|E_0\rangle=0$.
 <hr>
 
 </div>

@@ -4,7 +4,7 @@ layout: concept
 
 <!-- Definition goes here -->
 <div id="overview">
-
+Neutrinos has three flavours, but we can simply this to a spin-1/2 system with two flavours to show that neutrinos oscillate between their states.
 </div>
 
 <!-- Concepts go here -->
@@ -16,7 +16,23 @@ layout: concept
 <!-- used-in go here -->
 <div id="derivation">
   <h2>Derivation</h2>
-  Coming soon
+  The energy of a neutrino is
+  $$\begin{align*}
+E&=\sqrt{m^2c^4+p^2c^2} \\
+&\approx pc + \frac{m_ic^2}^2{2pm}
+\end{align*}$$. <br>
+Assume that $v_e$ and $v_{\mu}$ are quantum states of a spin-1/2 system. Then the state of a neutrino is a linear superposition of eigenstates of the Hamiltonian (energy) $|v_1\rangle$ and $|v_2\rangle$ with respective energies $pc+\frac{m_1^2c^4}{2pc}$ and $pc+\frac{m^2_2c^4}{2pc}$. Then we can write $|v_e\rangle$ and $|v_{\mu}\rangle$ in terms of the possible measurements of energy for
+$$\begin{align*}
+|v_e\rangle &= a|v_1\rangle + b|v_2\rangle \\
+|v_{\mu}\rangle = c|v_1\rangle + d|v_2\rangle
+\end{align*}$$
+We initialize the system in $|v_e\rangle$. Then the probability of a change in flavour is the same as the probability of a spin flip, which means
+$$\begin{align*}
+\text{Prob}_{v_2\to v_{\mu}} \porp \sin^2[\frac{E_1-E_2}{2}t]
+\end{align*}$$ which means that
+$$\begin{align*}
+E_1-E_2\prop(m_1^2-m_2^2),
+\end{align*}$$ which neutrino oscillations are proportional to the difference of the squared mass of neutrios mass eigenstates.
 </div>
 
 <!-- hypothesis go here -->
