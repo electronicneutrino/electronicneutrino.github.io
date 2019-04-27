@@ -1,0 +1,75 @@
+---
+layout: definitions
+---
+
+<!-- Definition goes here -->
+<div id="definition">
+For $A\in M_{n,m}$ and $B\in M_{n, p}$, the <mark>matrix product</mark> $AB$ is given by $AB=[c_{ik}]\in M_{m, p}$ where
+$$\begin{align*}
+c_{ik}=\sum_{j=1}^na_{ij}b_{jk}
+\end{align*}$$. <br>
+Note that $AB$ is only defined if the dimensions match up ie. $A$ is $m\times n$ and $B$ is $n\times p$. 
+</div>
+
+<!-- Concepts go here -->
+<div id="concepts">
+  <h2>Concepts</h2>
+  Matrix multiplication does is not communitive in general. <hr>
+  Matrix multiplication is associative.
+  <hr>
+  Consider a composition of transformations $A\circ B:\mathbb{F}^p\to\mathbb{F}^m$, where $A=[a_{ij}]$ and $B=[b_{ij}]$.Then $(A\circ B)(x)=A(B(x))$ for $A=[a_{ij}]$, $B=[b_{ij}]$ and $x\in\mathbb{F}^n$. <br>
+  Recall that
+  $$\begin{align*}
+[Ax]_i=\begin{bmatrix}\sum_{j=1}^na_{ij}x_j\end{bmatrix}
+\end{align*}$$ and
+$$\begin{align*}
+[Bx]_i=\begin{bmatrix}\sum_{k=1}^pb_{ik}x_k\end{bmatrx}.
+\end{align*}$$
+Let $y=Bx\in\mathbb{F}^n$. Then
+$$\begin{align*}
+[y]_j=\begin{bmatrix}\sum_{k=1}^pb_{ik}x_k\end{bmatrix}
+\end{align*}$$ and hence
+$$\begin{align*}
+[A(Bx)]_j&=[Ay]_i \\
+&=\begin{bmatrix}sum_{j=1}^n a_{ij}y_j\end{bmatrix} \\
+&=\sum_{j=1}^n a_{ij}(\sum_{k=1}^pb_{jk}x_k) \\
+&=\sum_{j=1}^n\sum_{k=1}^pa_{ij}b_{ik}x_k
+\end{align*}$$. <br>
+If we'd liked to define $C\in M_{mp}(\mathbb{F})$ by
+$$\begin{align*}
+c_{ik}=\sum_{j=1}^na_{ij}b_{jk}
+\end{align*}$$ then  for $x\in\mathbb{F}^p$,
+$$\begin{align*}
+[Cx]_i&=\sum_{k=1}^p c_{ik}x_k \\
+&=\sum_{k=1}^p\sum_{j=1}^n a_{ij}b_{jk}x_k \\
+&=[(A\circ B)(x)]_i
+\end{align*}$$
+</div>
+
+<!-- used-in go here -->
+<div id="used-in">
+  <h2>Used In</h2>
+  Coming soon
+</div>
+
+<!-- hypothesis go here -->
+<div id="hypothesis">
+  <h2>Hypothesis</h2>
+  Coming soon
+</div>
+
+<!-- results go here -->
+<div id="results">
+  <h2>Results</h2>
+  Coming soon
+</div>
+
+
+
+<!-- related go here -->
+<div id="related">
+  <h2>Related</h2>
+  <ul>
+
+  </ul>
+</div>

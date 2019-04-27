@@ -1,0 +1,48 @@
+---
+layout: theorems
+---
+
+<!-- Theorem goes here -->
+<div id="theorem">
+  <h2>Two homogeneous equations have the same solution if they are row equivalent</h2>
+  For two $m\times n$ matrices $A$, $B$, $Ax=0$, $Bx=0$, the two have the same solutions if $A, B$ are row equivalent.
+</div>
+
+<!-- Concepts go here -->
+<div id="concepts">
+  <h2>Concepts</h2>
+  Coming soon
+</div>
+
+<!-- hypothesis go here -->
+<div id="hypothesis">
+  <h2>Hypothesis</h2>
+  We require that $Ax=0$ and $Bx=0$ as we need a solution to $Ax=0$ and assume that $B$ is obtained from $A$ by a single elementary row operation. Row operations on a column of $0$ remain the same column of $0$. <br>
+  We require $A$ and $B$ to be row equivalent for $Ax=0$ and $Bx=0$ to be equivalent, in order to call on another theorem.
+</div>
+
+<!-- results go here -->
+<div id="results">
+  <h2>Results</h2>
+  If two systems have the same solution, we can solve one system by solving the other.
+</div>
+
+<!-- proof go here -->
+<div id="proof">
+  <h2>Proof</h2>
+  Suppose $B$ is obtained from $A$ using a finite number of elemenetary row operations. That is,
+  $$\begin{align*}
+A=A_0\to A_1\to\dots\to A_k=B.
+\end{align*}$$
+It suffices to show that $A_{i}x=0$ and $A_{i+1}x=0$ have solutions for $0\leq 1\leq k-1$ (yeah idk what's going on there). We can also assume that $B$ is obtained from $A$ by a single elemenetary row operation. <br>
+Since elementary row operations are all invertible using elementary row operations, then rows of $A$ are linear combinations of rows of $B$, meaning $Ax=0$ and $Bx=0$ are equivalent. By a a theorem that equivalent matrices have the same solution, $A$ and $B$ have the same solution. 
+</div>
+
+
+<!-- related go here -->
+<div id="related">
+  <h2>Related</h2>
+  <ul>
+    <li>Is this an if and only if condition? </li>
+  </ul>
+</div>

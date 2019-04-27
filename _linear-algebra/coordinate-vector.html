@@ -4,13 +4,10 @@ layout: definitions
 
 <!-- Definition goes here -->
 <div id="definition">
-  A system of equations
-  $$\begin{align*}
-a_{11}x_{1}+\dots + a_{1n}x_n&=y_1 \\
-a_{21}x_1+\dots + a_{2n}x_n&=y_2 \\
-\vdots \\
-a_{m1}x_{1}+\dots + a_{mn}x_{n}&=y_{m}
-\end{align*}$$ is <mark>homogeneous</mark> if $y_1=y_2=\dots = y_m=0$.
+ Let $V$ be a vector space and $B$ a basis for $V$. Say $B=\{x_1, \dots, x_n\}$ and consider $B$ as an ordered set. Since $B$ is a spanning set, then there exists a linearly independent combination of $x_1, \dots, x_n$ such that for any $x\in V$, we have $x=\alpha_1x_1 +\dots + \alpha_nx_n $ for some unique $\alpha_1, \dots, \alpha_n$. Then the vector
+ $$\begin{align*}
+\begin{bmatrix}\alpha_1 \\ \dots \\ alpha_n\end{bmatrix} = [x]_{\beta}
+\end{align*}$$  is the <mark>coordinate vector</mark> of $x$ with respect to $B$.
 </div>
 
 <!-- Concepts go here -->

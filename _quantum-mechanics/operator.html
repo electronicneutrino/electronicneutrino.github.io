@@ -12,8 +12,11 @@ layout: def
   <h2>Notations</h2>
   Operators tend to be matrices. Decomposed into its eigenvectors, it is written
   $$\begin{align*}
-A=\sum_{i}\alpha_i|a_i\rangle \langle a_i|
-\end{align*}$$
+A=\sum_{i}\alpha_i|a_i\rangle \langle a_i|,
+\end{align*}$$ and its terms are
+$$\begin{align*}
+A_{ij}=\braket{\phi_i| A |\phi_j},
+\end{align*}$$ where $\braket{\phi_i|A|\phi_j}$ is the probability of measuring the eigenstate of $\bra{\phi_i}$ on $A\ket{\phi_j}$, often given experimentally (?).
 </div>
 
 <!-- Concepts go here -->
@@ -22,12 +25,18 @@ A=\sum_{i}\alpha_i|a_i\rangle \langle a_i|
   The eigenvectors of an operator forms a basis for the Hilbert space, and so by definition of basis, every quantum state can be represented as a superposition of the eigenvectors of the operator. <br>
   The eigenvalues of the operator is the possible results of the measurement, where the associate eigenvector is the quantum state that has the measurement of the eigenvalue.
   <br>
-  Hilbert space is defined by operators.
+  Hilbert space is defined by operators. <br>
+  We sometimes (when? I think for measureable observables?) require that an operator acts correctly on both a bra and a ket. That is, if $A\ket{\alpha}=\ket{\beta}$, then we would like an associated operator such that $\bra{\alpha}A^{\dagger}=\bra{\beta}$. This is the Hermitian conjungate.
+  <br>
+  Operators can be writtin in terms of its eigenvector basis. This is the spectral decomposition of an operator. 
 </div>
 
 <!-- Related goes here -->
 <div id="related">
   <h2>Related</h2>
-  Hilbert Space
-  Hamiltonian
+  <ul>
+    <li>Hilbert space</li>
+    <li>Hamiltonian</li>
+    <li>Hermitian</li>
+  </ul>
 </div>
