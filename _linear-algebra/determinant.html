@@ -1,0 +1,93 @@
+---
+layout: definitions
+---
+
+<!-- Definition goes here -->
+<div id="definition">
+
+  For $v_1, \dots, v_n\in\mathbb{R}^n$, let the determinant of $v_1, \dots, v_n$ be defined as the signed volume of a parallelpiped formed with $v_1, \dots, v_n$ ie. $\text{det}(v_1, \dots, v_n)=\text{signed volume of }P(v_1, \dots, v_n)$, where
+  $P(v_1, \dots, v_n)=\{\alpha_1 v_1 + \dots + \alpha_n v_n: \alpha_1\in [0, 1]\}$. The convension is that for $v_1$ to $v_2$ where we go clockwise, the volume is positive and negative volume otherwise. <br>
+  For a matrix $A\in M_n(P_n)$ with columns $v_1, \dots, v_n\in\mathbb{R}^n$, we define $\text{det} A=\text{det}(v_1, \dots, v_n)$
+</div>
+
+<!-- Concepts go here -->
+<div id="concepts">
+  <h2>Concepts</h2>
+
+In two dimension, two vectors can determine a parallelogram. In general for $n$ dimensions, $n$ vectors can determine a parallelpiped. <br>
+For the determinant, we are interested in the volume of the parallelpiped. <br>
+There are four basic properties of a determinant we want to cover.
+  <ol>
+    <li>
+       The determinant detects linear independence. That is, the determinant of a set is nonzero if and only if the set is linearly independent</li>
+    <li>
+
+  Antisymmetry. That is, $\text{det}(v_1, \dots, v_n)=-\text{det}(v_n, \dots, v_1)$</li>
+  <li>
+
+Multilinearity. That is, if we fix all variables except the first, we can express the determinant as a sum of two separate determinants with each of the first terms and so $\text{det}(v_1+v_1', \dots, v_n)=\text{det}(v_1, \dots, v_n)+\text{det}(v_1', \dots, v_n)$. </li>
+    <li>
+
+  Normalized. That is, for unit vectors $e_1$, we have $\text{det}(e_1, \dots, e_n)=1$
+</li>
+</ol><hr>
+
+For calculating the determinant, let
+  $$\begin{align*}
+A=\begin{bmatrix}a_1 & 0 & \dots & 0 \\
+0 & a_2 & \dots & 0 \\
+\vdots & \vdots &\ddots & \vdots \\
+0 & 0 & \dots & a_n
+\end{bmatrix}.
+\end{align*}$$
+Then
+$$\begin{align*}
+\text{det}(A)&=a_1\begin{bmatrix}1 & 0  & \dots & 0 \\ 0 & a_2 & \dots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \dots & a_n\end{bmatrix}\\
+&=a_1a_2\begin{bmatrix}1 & 0 & \dots & 0\\
+0 & 1 & \dots & 0 \\
+\vdots & \vdots &\ddots & \vdots \\
+0 & 0 & \dots & a_n
+\end{bmatrix}\\
+&=a_1\dots a_n\begin{bmatrix}1 & 0 & \dots & 0 \\
+0 & 1 & \dots & 0\\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \dots & 1 \end{bmatrix}
+\end{align*}$$
+
+Note that for an upper triangular matrix if $a_{ii}=0$ for some $i$, then $A$ is not invertible, so $\text{det }A=0$ <br>
+
+Recall that for elementary column operations, if we multiple one column by $\alpha$, then the determinant gets multiplied by $\alpha$. If we swap two columns, the determinant gets multiplied by $-1$, and adding scalar multiples of columns does not affect the determinant. Using this, we can create a formula to calculate the determinant.
+
+<br>
+Another method to calculate determinants is using <mark>cofactor expansion</mark>.
+</div>
+
+<!-- used-in go here -->
+<div id="used-in">
+  <h2>Used In</h2>
+  Coming soon
+</div>
+
+<!-- hypothesis go here -->
+<div id="hypothesis">
+  <h2>Hypothesis</h2>
+  Coming soon
+</div>
+
+<!-- results go here -->
+<div id="results">
+  <h2>Results</h2>
+  Coming soon
+</div>
+
+
+
+<!-- related go here -->
+<div id="related">
+  <h2>Related</h2>
+  <ul>
+
+  </ul>
+</div>

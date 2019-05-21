@@ -4,8 +4,11 @@ layout: theorems
 
 <!-- Theorem goes here -->
 <div id="theorem">
-  <h2>A linear transformation is determined by how it acts on a basis</h2>
-  Let $T:V\to W$ be a linear transformation, and $\{v_i\}_{i\in I}$ be a basis for $V$, and let $\{w_i\}_{i\in V}$ be any vectors in $W$. Then there's an unique linear transformation $T$ such that $Tv_1=w_1$ for all $i$. 
+  <h2>Combinations of Basis Change</h2>
+  Let $U, V, W$ be finite dimensional vector spaces with basis $B, C, D$ respectively. Let $T:U\to V$ and $S:V\to W$. Then
+  $$\begin{align*}
+[ST]_{D\leftarrow B}=[S]_{D\leftarrow C}[T]_{C\leftarrow B}
+\end{align*}$$
 </div>
 
 <!-- Concepts go here -->

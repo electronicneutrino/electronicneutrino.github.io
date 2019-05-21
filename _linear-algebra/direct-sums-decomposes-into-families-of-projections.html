@@ -4,8 +4,13 @@ layout: theorems
 
 <!-- Theorem goes here -->
 <div id="theorem">
-  <h2>A linear transformation is determined by how it acts on a basis</h2>
-  Let $T:V\to W$ be a linear transformation, and $\{v_i\}_{i\in I}$ be a basis for $V$, and let $\{w_i\}_{i\in V}$ be any vectors in $W$. Then there's an unique linear transformation $T$ such that $Tv_1=w_1$ for all $i$. 
+  If $V$ is a vector space and $P_1, \dots, P_k\in\mathcal{L}(V)$ are projections satisfying
+  <ol>
+    <li>$P_iP_j=0$ if $i\neq j$</li>
+    <li>P_1+\dots+ P_k=I_V</li>
+  </ol>
+  then $V=V_1\oplus\dots\oplus V_k$ for $V_i=\text{Ran}P_i$. <br>
+  Hence, direct sum decompositions correspond to families of projections satisfying the two properties. 
 </div>
 
 <!-- Concepts go here -->

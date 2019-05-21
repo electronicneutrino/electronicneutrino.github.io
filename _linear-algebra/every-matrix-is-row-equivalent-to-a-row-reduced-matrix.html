@@ -5,7 +5,7 @@ layout: theorems
 <!-- Theorem goes here -->
 <div id="theorem">
   <h2>Every matrix is row equivalent to a row reduced matrix</h2>
-  For any matrix $A$, we can apply only elementary row operations to obtain a equivalent row reduced matrix. 
+  For any matrix $A$, we can apply only elementary row operations to obtain a equivalent row reduced matrix.
 
 </div>
 
@@ -18,19 +18,35 @@ layout: theorems
 <!-- hypothesis go here -->
 <div id="hypothesis">
   <h2>Hypothesis</h2>
-  Coming soon
+  There are no hypothesis to be satisfied. As long as it is a matrix over a field, this theorm applies. <br>
+  The proof/process for obtaining a row reduced matrix involves the use of additive and multiplicative inverses.
+  (Is that the only condition? )
 </div>
 
 <!-- results go here -->
 <div id="results">
   <h2>Results</h2>
-  Coming soon
+  <ul>
+    <li>Row reduced matrices can be converted to row reduced echelon form by rearraging the rows of the matrix, which is an elementary operation. Hence row reduced matrices are also row equivalent to a row reduced echelon matrix.</li>
+  </ul>
 </div>
 
 <!-- proof go here -->
 <div id="proof">
   <h2>Proof</h2>
-  Coming soon
+
+  Consider the first row of a matrix. If the first entry is $0$, then the first condition holds. Otherwise, assume that $a_{1j}$ is the first nonzero entry. If we multiply the first row by $a_{1j}^{-1}$, then row 1 satisfies the condition of the first nonzero number being one.
+  $$\begin{align*}
+&\begin{bmatrix} 0 & \dots & 0 & a_{1j} & \dots & a_{1n}\\
+\vdots &\ddots &\vdots & \vdots &\ddots & \vdots \\ a_{m1} & \dots & a_{mj-1} & a_{mj} & \dots & a_{mn}\end{bmatrix}  \\
+\xrightarrow[\text{first row by $a_{1j}$}]{\text{multiplying the}} & \begin{bmatrix}0 & \dots & 0 & 1 & \dots & a_{1n}a_{1j}^{-1} \\
+\vdots & \ddots & \vdots & \vdots & \ddots & \vdots \\
+a_{m1}a_{1j}^{-1} & \dots  & a_{mj-1}a_{1j}^{-1} & a_{mj}a_{1j}^{-1} & \dots & a_{mn}a_{1j}^{-1}
+\end{bmatrix}
+\end{align*}$$
+Assume for some row $i$, we have that $a_{ij}\neq 0$. Then adding $-a_{ij}$ times the first row to $a_{1j}$ times the $i^{th}$ row will make $a_{ij}$ be $0$. Repeating this process for all rows $i$ such that $a_{ij}\neq 0$ will make this satisfy the condition of all subsequent rows being zero in the column. Note that the first row does not change.  <br>
+This process is then repeated with the second row, and so on, each time when working on the $k^{th}$ where the first nonzero element is $a_{kl}$ and we add scalar multiples of rows such that $a_{hl}\neq 0$ for $h \gt k$. <!--I'd like. probably wanna be a bit more clear--><br>
+Since this process only used elementary row operations, then the initial and final matrices are row equivalent. Because we applied the argument to a general matrix over a field, then any matrix is row equivalent to a row reduced matrix
 </div>
 
 
@@ -38,6 +54,6 @@ layout: theorems
 <div id="related">
   <h2>Related</h2>
   <ul>
-
+<li>Row reduced echelon form</li>
   </ul>
 </div>

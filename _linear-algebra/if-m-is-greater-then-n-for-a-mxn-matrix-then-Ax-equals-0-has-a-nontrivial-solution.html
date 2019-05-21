@@ -4,20 +4,21 @@ layout: theorems
 
 <!-- Theorem goes here -->
 <div id="theorem">
-  <h2>A linear transformation is determined by how it acts on a basis</h2>
-  Let $T:V\to W$ be a linear transformation, and $\{v_i\}_{i\in I}$ be a basis for $V$, and let $\{w_i\}_{i\in V}$ be any vectors in $W$. Then there's an unique linear transformation $T$ such that $Tv_1=w_1$ for all $i$. 
+  <h2>Sufficient conditions for nontrivial solutions</h2>
+  
+  If $A$ is a $m\times n$ matrix such that $m\lt n$, then $Ax=0$ has a nontrivial solution.
 </div>
 
 <!-- Concepts go here -->
 <div id="concepts">
   <h2>Concepts</h2>
-  Coming soon
+  We use row equivalence
 </div>
 
 <!-- hypothesis go here -->
 <div id="hypothesis">
   <h2>Hypothesis</h2>
-  Coming soon
+  We require $m\lt n$ for the $n-m$ free variables.
 </div>
 
 <!-- results go here -->
@@ -29,7 +30,7 @@ layout: theorems
 <!-- proof go here -->
 <div id="proof">
   <h2>Proof</h2>
-  Coming soon
+  Let $R$ be the row reduced echelon form that is row equivalent to $A$. Then there are at most $m$ isolated variables. Since $n\gt m$, then there exists at least $n-m\gt 0$ free variables.
 </div>
 
 
