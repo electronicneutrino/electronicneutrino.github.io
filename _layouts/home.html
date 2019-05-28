@@ -1,15 +1,16 @@
 ---
 layout: archive
 ---
-
-
-
+<div id="header"></div>
+<!--<div id="titlebar">
 {{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+</div>-->
+<h2 class="archive__subtitle">Shyle</h2>
+<div id="container">
 
 {% for post in paginator.posts %}
-{% include archive-single.html %}
+<!--{% include archive-single.html %}-->
+    <a href="{{ post.url | relative_url }}" rel="permalink">  <img src="{{ site.baseurl }}/{{ post.image }}"></a>
 {% endfor %}
-
+</div>
 {% include paginator.html %}
