@@ -1,35 +1,66 @@
 ---
 layout: definitions
+title: Invertible
 ---
 
 <!-- Definition goes here -->
 <div id="definition">
   A linear transformation $T:U\to U$ is <mark>invertible</mark> if there exists a linear transformation $T^{-1}:U\to U$ such that $TT^{-1}=T^{-1}T=I$. <br>
-  Furthermore if $T:V\to V$ is left or right invertible, then $T$ is invertible. 
+  Furthermore if $T:V\to V$, where $V$ is finite dimensional, is left or right invertible, then $T$ is invertible.
 </div>
 
 <!-- Concepts go here -->
 <div id="concepts">
   <h2>Concepts</h2>
-  As usual a function is invertible if and only if its bijective.
+  As usual a function is invertible if and only if its bijective. This means that if $R$ is invertible, then $R$ has no zero rows (if it has zero rows, it would not be subjective).<br>
+  For infinite matrices, it's possible that it is only left or right invertible, but not the other. For instance,
+
+  $$\begin{align*}
+A=\begin{bmatrix}
+0 & 0 & 0 & \dots \\
+1 & 0 & 0 & \dots \\
+0 & 1 & 0 & \dots \\
+\vdots & \vdots & \vdots &\ddots
+ \end{bmatrix}
+\end{align*}$$
+$A$ is left invertible but it is not right invertible. <br>
+If $A$ and $B$ are invertible, then so is $AB$, where $(AB)^{-1}=B^{-1}A^{-1}$. This holds for a an arbitrary number of matrices.
+<br>
+The inverse is calculated using block matrices. Let $R$ be a row reduced echelon matrix that is row equivalent to $A$. Note that $A$ is invertible if and only if $R$ is the identity matrix. <br>
+There also exists a matrix $P$ which is the product of elementary matrices such that $R=PA$, as $R$ is row equivalent to $A$. Since $R=I_n$, this implies that $P=A^{-1}$. <br>
+We form an augmented matrix, $[A|I_n]$. Multiplying this augmented matrix by $P$ then gives the new augmented matrix
+$$\begin{align*}
+P[A|I_n] &= [PA| P]\\
+&=[R|P]\\
+&=[I_n|P],
+\end{align*}$$
+and so $[A|I_n]$ is row equivalent to $[I_n|P]$
+Hence to compute $A^{-1}$, we form the augmented matrix  $[A|I_n]$ then row reduce until we get an augmeted matrix of the form $[I_n|A]$.
 </div>
 
 <!-- used-in go here -->
 <div id="used-in">
   <h2>Used In</h2>
-  Coming soon
+  <ul>
+    <li></li>
+  </ul>
 </div>
 
 <!-- hypothesis go here -->
 <div id="hypothesis">
   <h2>Hypothesis</h2>
-  Coming soon
+  <ul>
+    <li>If a matrix $A$ such that $A^k=I_n$ for some $k$, then $A$ is diagonalizable and stuff </li>
+    <li>If $f:X\to Y$ is a function, it has an inverse $P^{-1}:Y\to X$ if and only if $f$ is injective</li>
+  </ul>
 </div>
 
 <!-- results go here -->
 <div id="results">
   <h2>Results</h2>
-  Coming soon
+  <ul>
+    <li>If $f:X\to Y$ is a function, it has an inverse $P^{-1}:Y\to X$ if and only if $f$ is injective</li>
+  </ul>
 </div>
 
 
@@ -38,6 +69,6 @@ layout: definitions
 <div id="related">
   <h2>Related</h2>
   <ul>
-
+    <li>Identity matrices</li>
   </ul>
 </div>
